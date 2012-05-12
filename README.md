@@ -30,11 +30,13 @@ First, here is the script to init the database :
 ## Add a scan
 	
 To add a scan, just add it to the "manga" table.
-If you want to add Naruto and OnePiece for example :
+A few examples :
 
 	INSERT INTO  `scanz`.`manga` (`id` , `label` , `site_url` , `unread`) VALUES 
 	(NULL ,  'Naruto',  'http://baraddur.free.fr',  '583'), 
 	(NULL ,  'OnePiece',  'http://opluffy.com/lecture/lec',  '663');
+	(NULL ,  'Bleach',  'http://bleach.joohoo.fr/lecture_en_ligne',  '352');
+	(NULL ,  'FairyTail',  'http://data.mangaspaceserver.info/manga/Fairy',  '282');
 
 The url structure has to be site_url/chapter/filename, for example for Naruto "http://baraddur.free.fr/582/18.jpg". You only fill the database with the site_url part
 

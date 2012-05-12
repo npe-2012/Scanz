@@ -43,13 +43,9 @@
         if (substr($headers[0], 9, 3) != "404")
         {
             $i = 1;
-            $page = $i < 10 ? "0$i" : $i;
-            $filename = "$page.jpg";
-            $url = "$url_chapter/$filename";
-            
             $is404 = false;
 
-            if(!@getimagesize($url)) break;
+            if(!@getimagesize("$url_chapter/01.jpg")) break;
 
             // We loop on each page and download it if exists
             while(!$is404)
