@@ -45,4 +45,13 @@ You have to write your Dropbox username and password in the PHP Script to allow 
 ## Make it automatic
 
 Upload this script to your server and add it to your cron table
+If you already have one :
+    crontab -e
+If you don't, create it :
+    vi my_crontab
+    crontab my_crontab
+
+To run the script every 6 hours, you should write :
+    00 */6 * * * php /var/www/Scanz/auto_dl.php
+
 
