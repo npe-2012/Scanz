@@ -3,6 +3,9 @@ Scanz
 
 PHP Script : Auto download Mangas/Scans
 
+This Script will download the last chapters of the Scans you like in your Dropbox (it creates a /Scanz folder).
+Make a cron and your favorite Scans will be downloaded automatically in your Dropbox.
+
 ##Database init
 
 First, here is the script to init the database :
